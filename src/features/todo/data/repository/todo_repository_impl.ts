@@ -10,7 +10,7 @@ export class TodoRepositoryImpl implements TodoRepository {
   async create(todo: Omit<Todo, "id">): Promise<Todo> {
     return await this.todoDb.create(todo)
   }
-  async update(todo: Todo): Promise<Todo> {
+  async update(todo: Todo): Promise<Todo | undefined> {
     return await this.todoDb.update(todo)
   }
   async delete(id: string): Promise<void> {
