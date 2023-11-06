@@ -4,8 +4,6 @@
     "module": "NodeNext",
     "rootDir": "./src",
     "moduleResolution": "NodeNext",
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
     "outDir": "./dist",
     "baseUrl": "./",
     "esModuleInterop": true,
